@@ -1,0 +1,15 @@
+.header {
+  padding: 0 $padding-container 0 $padding-container;
+  position: relative;
+  height: $height-header;
+}
+
+.header-img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-img {
+  width: 100%;
+}

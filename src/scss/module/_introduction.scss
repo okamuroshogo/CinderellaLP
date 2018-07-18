@@ -1,0 +1,41 @@
+.introduction {
+  position: relative;
+}
+
+.introduction__effect {
+  position: absolute;
+  transform: scale(0.5);
+}
+
+.introduction__container {
+  padding: $padding-vertical-per-section $padding-container $padding-vertical-per-section $padding-container;
+  display: flex;
+  justify-content: space-around;
+}
+
+.introduction__effect--top {
+  transform-origin: top left;
+  top: -50px;
+  left: 0;
+}
+
+.introduction__effect--bottom {
+  transform-origin: bottom right;
+  bottom: 0;
+  right: 0;
+}
+
+.introduction__ornament {
+  transform: translateY($padding-vertical-per-section * -1) scale(0.6);
+}
+
+.introduction__content {
+  text-align: center;
+  & p {
+    color: white;
+  }
+}
+
+.introduction__explanation {
+  padding-top: $padding-vertical-per-section;
+}

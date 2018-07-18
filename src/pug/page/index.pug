@@ -8,5 +8,20 @@ prepend config-block
 //- append javascript-block
 
 block content-block
-  .sample-icon
-  | hello, world!
+  header(class="header")
+    img(src="/img/logo.png" class="header-img")
+  .hero
+    img(src="/img/hero.png" class="hero-img")
+
+  include includes/introduction.pug
+  include includes/features.pug
+  include includes/share.pug
+  include includes/footer.pug
+
+
+
+
+
+
+
+

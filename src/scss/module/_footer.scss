@@ -1,0 +1,21 @@
+.footer {
+  background-color: $bg-color-footer;
+  padding: 0 $padding-container 0 $padding-container;
+  position: relative;
+  height: $height-footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  & p {
+    color: white;
+  }
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__copyright {
+  text-align: center;
+}

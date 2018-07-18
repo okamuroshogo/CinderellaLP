@@ -1,0 +1,17 @@
+p {
+  line-height: 2;
+  text-shadow: 2.5px 2.5px 4px $color-text-shadow;
+  color: #176461;
+}
+
+.text-title {
+  font-size: $font-title-size;
+}
+
+.text-footer {
+  font-size: $font-footer-size;
+}
+
+a {
+  text-decoration: none;
+}

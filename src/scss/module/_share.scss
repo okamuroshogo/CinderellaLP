@@ -1,0 +1,22 @@
+.share {
+  padding: 0 $padding-container $padding-vertical-per-section $padding-container;
+  text-align: center;
+}
+
+.share__container {
+  background-color: $bg-color-section;
+  padding: $padding-feature;
+}
+
+.share__thought, .share__app-problem {
+  padding-bottom: $padding-vertical-large
+}
+
+.share__pre-registration-text > p {
+  padding-bottom: $padding-vertical-small/2;
+}
+
+.share__pre-registration-button--image {
+  padding-bottom: $padding-vertical-large;
+  width: 50%;
+}

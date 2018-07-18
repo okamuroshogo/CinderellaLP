@@ -1,0 +1,70 @@
+.features {
+  padding: 0 $padding-container $padding-vertical-per-section $padding-container;
+  text-align: center;
+}
+
+.features__container {
+  background-color: $bg-color-section;
+  padding: $padding-feature;
+}
+
+.feature__icons {
+  padding: $padding-vertical-small 0 $padding-vertical-small 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature__icons-container {
+  flex: 1;
+}
+
+.feature-icon {
+  width: 90%;
+  padding-bottom: $padding-vertical-small;
+}
+
+.feature-icon-caption {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+
+.feature__invite {
+  padding-top: $padding-vertical-small;
+}
+
+.feature__about-app {
+  padding-top: $padding-vertical-large;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature__about-app--image-container {
+  position: relative;
+  flex: 1;
+}
+
+.feature__about-app--image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transform: translate(-25px, -125px);
+  }
+
+.feature__pre-registration {
+  flex: 1
+}
+
+.feature__pre-registration-text > p {
+  padding-bottom: $padding-vertical-small/2;
+}
+
+.feature__pre-registration-button--image {
+  padding-bottom: $padding-vertical-small/2;
+  width: 100%;
+}
+
+.feature__pre-registration-app-stores--image {
+  width: 50%;
+}
