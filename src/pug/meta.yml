@@ -1,15 +1,15 @@
 # このサイト全体のタイトル
-site_name: foo
+site_name: シンデレラ | 王子様からウィンクが届く
 
 # meta description（og:description・twitter:descriptionでも使用）
-description: bar
+description: 王子様からウィンクが届く！シンデレラ系という、新しいジャンルのマッチングサービス
 
 # meta keywords
 keywords: []
 
 # カノニカル・og:urlなどで使われる、このサイトのURL
 # （複数ページあるサイトでは、全てに同じURLを入れないように）
-# url: http://example.com/
+url: https://cinderella-castle.com
 
 # Facebook OGP・Twitter cardsで使われる画像 フルURLで指定すること
 # ogp_image_url: http://example.com/ogp.jpg

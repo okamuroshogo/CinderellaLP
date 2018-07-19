@@ -20,3 +20,14 @@
   padding-bottom: $padding-vertical-large;
   width: 50%;
 }
+
+.share__sns-buttons {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.fb-share-button {
+  transform: translate(0, -4px);
+  padding: 0 10px 0 10px;
+}

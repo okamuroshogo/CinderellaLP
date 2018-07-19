@@ -7,9 +7,13 @@ prepend config-block
 
 //- append javascript-block
 
+block sns-block
+  #fb-root
+  script(type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async")
+  script(src='/js/sns.js')
+
 block content-block
-  header(class="header")
-    img(src="/img/logo.png" class="header-img")
+  include includes/header.pug
   .hero
     img(src="/img/hero.png" class="hero-img")
 
