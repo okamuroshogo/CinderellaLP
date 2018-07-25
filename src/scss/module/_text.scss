@@ -10,6 +10,9 @@
 
 .text-footer {
   font-size: $font-footer-size;
+  padding: 10px;
+  @include sp-layout {
+  }
 }
 
 a {

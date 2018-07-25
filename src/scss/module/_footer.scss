@@ -1,19 +1,29 @@
 .footer {
   background-color: $bg-color-footer;
-  padding: 0 $padding-container 0 $padding-container;
   position: relative;
-  height: $height-footer;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  box-sizing: border-box;
   & p {
     color: white;
+  }
+  @include pc-layout {
+    padding: 20px $padding-pages-container 20px $padding-pages-container;
+    height: $height-footer;
+  }
+  @include sp-layout {
+    padding: 20px $padding-container/2 20px $padding-container/2;
   }
 }
 
 .footer__menu {
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
+  @include sp-layout {
+    flex-direction: column;
+  }
 }
 
 .footer__copyright {

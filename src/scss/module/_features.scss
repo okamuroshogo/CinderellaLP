@@ -1,6 +1,11 @@
 .features {
-  padding: 0 $padding-container $padding-vertical-per-section $padding-container;
   text-align: center;
+  @include pc-layout {
+    padding: 0 $padding-container $padding-vertical-per-section $padding-container;
+  }
+  @include sp-layout {
+    padding-bottom: $padding-vertical-per-section;
+  }
 }
 
 .features__container {
@@ -12,15 +17,25 @@
   padding: $padding-vertical-small 0 $padding-vertical-small 0;
   display: flex;
   justify-content: space-between;
+  @include sp-layout {
+    flex-direction: column;
+  }
 }
 
 .feature__icons-container {
   flex: 1;
+  @include sp-layout {
+    padding-bottom: 30px;
+  }
 }
 
 .feature-icon {
   width: 90%;
   padding-bottom: $padding-vertical-small;
+  @include sp-layout {
+    padding-bottom: 0;
+    width: 50%;
+  }
 }
 
 .feature-icon-caption {
@@ -37,6 +52,10 @@
   padding-top: $padding-vertical-large;
   display: flex;
   justify-content: space-between;
+  @include sp-layout {
+    padding-top: $padding-vertical-small;
+    flex-direction: column;
+  }
 }
 
 .feature__about-app--image-container {
@@ -45,15 +64,20 @@
 }
 
 .feature__about-app--image {
+  @include pc-layout {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    transform: translate(-25px, -125px);
+    transform: translate(-25px, -25px);
   }
+  @include sp-layout {
+    width: 50vw;
+  }
+}
 
 .feature__pre-registration {
-  flex: 1
+  flex: 1;
 }
 
 .feature__pre-registration-text > p {

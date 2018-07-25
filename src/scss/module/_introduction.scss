@@ -8,11 +8,22 @@
 }
 
 .introduction__container {
-  padding: $padding-vertical-per-section $padding-container $padding-vertical-per-section $padding-container;
   display: flex;
-  justify-content: space-around;
+  @include pc-layout {
+    padding: $padding-vertical-per-section $padding-container $padding-vertical-per-section $padding-container;
+    justify-content: space-around;
+  }
+  @include sp-layout {
+    padding: $padding-vertical-per-section*0.5 0 $padding-vertical-per-section*0.5 0;
+    justify-content: space-around;
+  }
 }
 
+.introduction__effect {
+  @include sp-layout {
+    width: 200vw;
+  }
+}
 .introduction__effect--top {
   transform-origin: top left;
   top: -50px;
@@ -26,16 +37,31 @@
 }
 
 .introduction__ornament {
-  transform: translateY($padding-vertical-per-section * -1) scale(0.6);
+  transform-origin: top;
+  transform: translateY($padding-vertical-per-section * -0.75) scale(0.6);
+  object-fit: contain;
+  @include sp-layout {
+    // transform: scale(0.3);
+    // margin: 0px -35px 0px -35px;
+    display: none;
+  }
 }
 
 .introduction__content {
   text-align: center;
+  @include sp-layout {
+    margin: 0px -15px 0px -15px;
+  }
   & p {
     color: white;
   }
 }
 
 .introduction__explanation {
-  padding-top: $padding-vertical-per-section;
+  @include pc-layout {
+    padding-top: $padding-vertical-per-section;
+  }
+  @include sp-layout {
+    padding-top: $padding-vertical-per-section*0.5;
+  }
 }

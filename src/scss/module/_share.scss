@@ -1,6 +1,8 @@
 .share {
-  padding: 0 $padding-container $padding-vertical-per-section $padding-container;
   text-align: center;
+  @include pc-layout {
+    padding: 0 $padding-container $padding-vertical-per-section $padding-container;
+  }
 }
 
 .share__container {
@@ -9,7 +11,12 @@
 }
 
 .share__thought, .share__app-problem {
-  padding-bottom: $padding-vertical-large
+  @include pc-layout {
+    padding-bottom: $padding-vertical-per-section;
+  }
+  @include sp-layout {
+    padding-bottom: $padding-vertical-small;
+  }
 }
 
 .share__pre-registration-text > p {
@@ -17,8 +24,14 @@
 }
 
 .share__pre-registration-button--image {
-  padding-bottom: $padding-vertical-large;
-  width: 50%;
+  @include pc-layout {
+    padding-bottom: $padding-vertical-large;
+    width: 50%;
+  }
+  @include sp-layout {
+    padding-bottom: $padding-vertical-small;
+    width: 75%;
+  }
 }
 
 .share__sns-buttons {

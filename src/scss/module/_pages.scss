@@ -1,0 +1,58 @@
+.pages {
+  @include pc-layout {
+    padding: 0 $padding-pages-container $padding-vertical-small $padding-pages-container;   
+  }
+  @include sp-layout {
+    padding: 0;
+  }
+}
+
+// Container
+
+.pages-container { 
+  background-color: $bg-color-section;
+  padding: $padding-feature;
+}
+
+.pages-container--center { 
+  margin: 0 auto;
+}
+
+.section {
+  padding-bottom: $padding-vertical-small;
+}
+
+// Texts
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.section-title--left {
+  text-align: left;
+}
+
+.section-content {
+  line-height: 2;
+  font-size: 1.1em;
+}
+
+// Google Forms
+
+.form {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  @include pc-layout {
+    width: 700px;
+  }
+}

@@ -1,15 +1,25 @@
 .header {
-  padding: 0 $padding-container 0 $padding-container;
   position: relative;
-  height: $height-header;
+  background: url('/img/logo.png') no-repeat center left;
+  @include pc-layout {
+    margin: 0 $padding-container 0 $padding-container;
+    height: $height-header;
+    background-size: 25vh;
+  }
+  @include sp-layout {
+    margin: 0 $padding-container 0 $padding-container/2;
+    height: $height-header*0.5;
+    background-size: 20vh;
+  }
 }
 
-.header-img {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.hero-img {
-  width: 100%;
+.hero {
+  background: url('/img/hero.png') no-repeat center center;
+  height: 40vw;
+  @include pc-layout {
+    background-size: contain;
+  }
+  @include sp-layout {
+    background-size: 150%;
+  }
 }
