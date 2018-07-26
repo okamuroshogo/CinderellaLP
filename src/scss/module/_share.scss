@@ -25,7 +25,7 @@
 
 .share__pre-registration-button--image {
   @include pc-layout {
-    padding-bottom: $padding-vertical-large;
+    padding-bottom: $padding-vertical-per-section;
     width: 50%;
   }
   @include sp-layout {

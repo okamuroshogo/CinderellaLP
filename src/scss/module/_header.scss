@@ -1,13 +1,11 @@
 .header {
   position: relative;
-  background: url('/img/logo.png') no-repeat center left;
+  background: url('/img/logo.png') no-repeat center center;
   @include pc-layout {
-    margin: 0 $padding-container 0 $padding-container;
     height: $height-header;
     background-size: 25vh;
   }
   @include sp-layout {
-    margin: 0 $padding-container 0 $padding-container/2;
     height: $height-header*0.5;
     background-size: 20vh;
   }

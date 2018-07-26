@@ -41,17 +41,12 @@
   transform: translateY($padding-vertical-per-section * -0.75) scale(0.6);
   object-fit: contain;
   @include sp-layout {
-    // transform: scale(0.3);
-    // margin: 0px -35px 0px -35px;
     display: none;
   }
 }
 
 .introduction__content {
   text-align: center;
-  @include sp-layout {
-    margin: 0px -15px 0px -15px;
-  }
   & p {
     color: white;
   }
