@@ -19,8 +19,12 @@
   }
 }
 
+.share__app-problem-explanation:not(:last-child) {
+  @include text-block;
+}
+
 .share__pre-registration-text > p {
-  padding-bottom: $padding-vertical-small/2;
+  @include text-block;
 }
 
 .share__pre-registration-button--image {
@@ -32,6 +36,10 @@
     padding-bottom: $padding-vertical-small;
     width: 75%;
   }
+}
+
+.share__precaution {
+  padding-bottom: $padding-vertical-per-section;
 }
 
 .share__sns-buttons {

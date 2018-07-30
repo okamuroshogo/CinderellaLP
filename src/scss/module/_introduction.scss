@@ -47,6 +47,7 @@
 
 .introduction__content {
   text-align: center;
+  padding: $padding-vertical-small*0.5;
   & p {
     color: white;
   }
@@ -59,4 +60,8 @@
   @include sp-layout {
     padding-top: $padding-vertical-per-section*0.5;
   }
+}
+
+.introduction__explanation-content:not(:last-child) {
+  @include text-block;
 }

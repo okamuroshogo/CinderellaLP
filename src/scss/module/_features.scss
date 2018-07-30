@@ -44,6 +44,10 @@
   text-align: center;
 }
 
+.feature-icon-caption-title {
+  padding-bottom: $padding-vertical-small*0.5;
+}
+
 .feature__invite {
   padding-top: $padding-vertical-small;
 }
@@ -68,7 +72,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    height: 500px;
     transform: translate(-25px, -75px);
   }
   @include sp-layout {

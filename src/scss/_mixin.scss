@@ -9,3 +9,7 @@
         @content;
     }
 }
+
+@mixin text-block {
+  padding-bottom: $padding-vertical-small*0.75;
+}
