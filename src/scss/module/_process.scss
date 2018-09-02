@@ -1,0 +1,170 @@
+$height-point-section: 115px;
+$padding-left-right: 20px;
+$background-color-point-title: #48969A;
+$background-color-point-explanation-title: #44C3C2;
+$background-color-point-explanation: #69E0D9;
+$background-color-point-content: #CDF0EE;
+$background-color-point-appendix: #55CECB;
+$color: white;
+$font-size-point-section: 13px;
+
+@mixin point-background ($url, $bg-size) {
+  background: url($url) no-repeat center center;
+  background-size: $bg-size;
+  height: 100%;
+}
+
+@mixin point-header-content ($number) {
+  padding-bottom: 10px;
+  &::before {
+    display: inline-block;
+    background-color: #3F7974;
+    content: "#{$number}";
+    text-align: center;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+  }  
+}
+
+.point-header {
+  position: relative;
+  background: url('/img/points/bg_shine.png');
+  background-size: cover;
+  background-position: 35% 20%;
+}
+
+.point-header__title {
+  padding: 25px 0;
+  display: block;
+  top: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.point--last {
+  margin-bottom: 40px;
+}
+
+.point__content {
+  background-color: $background-color-point-content;
+  padding: 20px $padding-left-right;
+}
+.point__content.point__content--large-padding-bottom {
+  padding-bottom: 60px;
+}
+
+.point__title {
+  background-color: $background-color-point-title;
+  padding: 5px $padding-left-right;
+  color: $color;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.point__appendix {
+  background-color: $background-color-point-appendix;
+  font-size: 12.5px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $color;
+  border-radius: 17.5px;
+}
+
+.point__section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.point__section-header {
+  font-size: $font-size-point-section;
+}
+.point__section-header-number {
+  display: inline-block;
+  background-color: #3F7974;
+  text-align: center;
+  border-radius: 50%;
+  height: $font-size-point-section+6px;
+  width: $font-size-point-section+6px;
+  margin-right: 2px;
+}
+
+.point__section-header-content {
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 13.5px;
+}
+
+.point__section-content {
+  display: flex;
+  justify-content: center;
+}
+.point__section-content--large {
+  height: $height-point-section;
+}
+.point__section-content--small {
+  height: $height-point-section*0.85;
+}
+
+.point__explanation {
+  flex: 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.point__explanation-title {
+  background-color: $background-color-point-explanation-title;
+  padding: 6px 0 6px 0;
+  border-radius: 20px 20px 0 0;
+  color: $color;
+}
+
+.point__explanation-picture {
+  background-color: $background-color-point-explanation;
+  height: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+.point__explanation-arrow {
+  @include point-background('/img/points/icon_arrow-big.png', 45%);
+  width: 20%;
+  flex: 1;
+}
+.point__explanation-arrow--small {
+  @include point-background('/img/points/icon_arrow-small.png', 45%);
+  flex: 1;
+}
+
+.point__explanation-picture--3-points {
+  @include point-background('/img/points/point_3.png', 52.5%);
+}
+.point__explanation-picture--5-points {
+  @include point-background('/img/points/point_5.png', 75%);
+}
+.point__explanation-picture--10-points {
+  @include point-background('/img/points/point_10.png', 55%);
+}
+.point__explanation-picture--50-points {
+  @include point-background('/img/points/point_50.png', 80%);
+}
+.point__explanation-picture--board {
+  @include point-background('/img/points/icon_board.png', 45%);
+}
+.point__explanation-picture--heart {
+  @include point-background('/img/points/icon_heart.png', 45%);
+}
+.point__explanation-picture--chat {
+  @include point-background('/img/points/icon_chat.png', 45%);
+}
+.point__explanation-picture--video {
+  @include point-background('/img/points/icon_video.png', 45%);
+}
+.point__explanation-picture--coin {
+  @include point-background('/img/points/p-coin.png', 50%);
+}
+.point__explanation-picture--yen {
+  @include point-background('/img/points/p-yen.png', 50%);
+}
