@@ -1,5 +1,5 @@
 $height-point-section: 115px;
-$padding-left-right: 20px;
+$padding-left-right: 5vw;
 $background-color-point-title: #48969A;
 $background-color-point-explanation-title: #44C3C2;
 $background-color-point-explanation: #69E0D9;
@@ -12,6 +12,12 @@ $font-size-point-section: 13px;
   background: url($url) no-repeat center center;
   background-size: $bg-size;
   height: 100%;
+  @include sp-landscape-layout {
+    background-size: $bg-size*0.5;
+  }
+  @include pc-layout {
+    background-size: $bg-size*0.5;
+  }
 }
 
 @mixin point-header-content ($number) {
@@ -25,22 +31,25 @@ $font-size-point-section: 13px;
     height: 24px;
     width: 24px;
     margin-right: 10px;
-  }  
+  }
 }
 
 .point-header {
   position: relative;
   background: url('/img/points/bg_shine.png');
-  background-size: cover;
   background-position: 35% 20%;
+  background-size: cover;
 }
 
 .point-header__title {
   padding: 25px 0;
   display: block;
   top: 0;
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
+  @include pc-layout {
+    width: 40%;
+  }
 }
 
 .point--last {
@@ -59,18 +68,24 @@ $font-size-point-section: 13px;
   background-color: $background-color-point-title;
   padding: 5px $padding-left-right;
   color: $color;
-  font-size: 16px;
   letter-spacing: 3px;
+  font-size: $font-size-point-section + 3px;
+  @include pc-layout {
+    font-size: $font-size-point-section + 7px;
+  }
 }
 
 .point__appendix {
   background-color: $background-color-point-appendix;
-  font-size: 12.5px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   color: $color;
   border-radius: 17.5px;
+  font-size: $font-size-point-section - 0.5px;
+  @include pc-layout {
+    font-size: $font-size-point-section + 3.5px;
+  }
 }
 
 .point__section {
@@ -78,24 +93,30 @@ $font-size-point-section: 13px;
   padding-bottom: 10px;
 }
 
-.point__section-header {
-  font-size: $font-size-point-section;
-}
 .point__section-header-number {
   display: inline-block;
   background-color: #3F7974;
   text-align: center;
   border-radius: 50%;
-  height: $font-size-point-section+6px;
-  width: $font-size-point-section+6px;
+  font-size: $font-size-point-section;
+  height: $font-size-point-section + 6px;
+  width: $font-size-point-section + 6px;
   margin-right: 2px;
   color: $color;
+  @include pc-layout {
+    font-size: $font-size-point-section + 4px;
+    height: $font-size-point-section + 10px;
+    width: $font-size-point-section + 10px;
+  }
 }
 
 .point__section-header-content {
   display: inline-block;
   padding-bottom: 10px;
-  font-size: 13.5px;
+  font-size: $font-size-point-section + 0.5px;
+  @include pc-layout {
+    font-size: $font-size-point-section + 4.5px;
+  }
 }
 
 .point__section-content {
@@ -104,9 +125,15 @@ $font-size-point-section: 13px;
 }
 .point__section-content--large {
   height: $height-point-section;
+  @include pc-layout {
+    height: $height-point-section*2;
+  }
 }
 .point__section-content--small {
   height: $height-point-section*0.85;
+  @include pc-layout {
+    height: $height-point-section*2*0.85;
+  }
 }
 
 .point__explanation {

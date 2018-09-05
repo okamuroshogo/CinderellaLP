@@ -4,6 +4,12 @@
     }
 }
 
+@mixin sp-landscape-layout {
+    @media (min-width: ($sp_max_width)) and (max-width: ($pc_min_width - 1)) {
+        @content;
+    }
+}
+
 @mixin sp-layout {
     @media (max-width: ($pc_min_width - 1)) {
         @content;
