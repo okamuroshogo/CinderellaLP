@@ -157,44 +157,44 @@ $font-size-point-section: 13px;
 }
 
 .point__explanation-arrow {
-  @include point-background('/img/points/icon_arrow-big.png', 45%);
+  @include point-background('/img/points/icon_arrow-big.png', 40%);
   width: 20%;
   flex: 1;
 }
 .point__explanation-arrow--small {
-  @include point-background('/img/points/icon_arrow-small.png', 45%);
+  @include point-background('/img/points/icon_arrow-small.png', 40%);
   flex: 1;
 }
 
 .point__explanation-picture--3-points {
-  @include point-background('/img/points/point_3.png', 52.5%);
+  @include point-background('/img/points/point_3.png', 47.5%);
 }
 .point__explanation-picture--5-points {
-  @include point-background('/img/points/point_5.png', 75%);
+  @include point-background('/img/points/point_5.png', 70%);
 }
 .point__explanation-picture--10-points {
-  @include point-background('/img/points/point_10.png', 55%);
+  @include point-background('/img/points/point_10.png', 50%);
 }
 .point__explanation-picture--50-points {
-  @include point-background('/img/points/point_50.png', 80%);
+  @include point-background('/img/points/point_50.png', 75%);
 }
 .point__explanation-picture--board {
-  @include point-background('/img/points/icon_board.png', 45%);
+  @include point-background('/img/points/icon_board.png', 40%);
 }
 .point__explanation-picture--heart {
-  @include point-background('/img/points/icon_heart.png', 45%);
+  @include point-background('/img/points/icon_heart.png', 40%);
 }
 .point__explanation-picture--chat {
-  @include point-background('/img/points/icon_chat.png', 45%);
+  @include point-background('/img/points/icon_chat.png', 40%);
 }
 .point__explanation-picture--video {
-  @include point-background('/img/points/icon_video.png', 45%);
+  @include point-background('/img/points/icon_video.png', 40%);
 }
 .point__explanation-picture--coin {
-  @include point-background('/img/points/p-coin.png', 50%);
+  @include point-background('/img/points/p-coin.png', 45%);
 }
 .point__explanation-picture--yen {
-  @include point-background('/img/points/p-yen.png', 50%);
+  @include point-background('/img/points/p-yen.png', 45%);
 }
 
 
