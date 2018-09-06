@@ -196,3 +196,36 @@ $font-size-point-section: 13px;
 .point__explanation-picture--yen {
   @include point-background('/img/points/p-yen.png', 50%);
 }
+
+
+
+.point-purchase {
+  height: 115px;
+  display: grid;
+  grid-template-columns: 2fr auto 1.5fr 4fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+   "coin point-number point-text button"
+   "coin point-number point-bonus button"
+   "coin appendix appendix button";
+}
+.point-purchase__coin {
+  grid-area: coin;
+  @include point-background('/img/points/point_90px.png', 50%);
+}
+.point-purchase__point-number {
+  grid-area: point-number;
+}
+.point-purchase__point-text {
+  grid-area: point-text;
+}
+.point-purchase__point-bonus {
+  grid-area: point-bonus;
+}
+.point-purchase__appendix {
+  grid-area: appendix;
+}
+
+.point-purchase__button {
+  grid-area: button;
+}

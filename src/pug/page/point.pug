@@ -1,0 +1,26 @@
+extends /layout/_default-layout
+
+block content-block
+
+  header.point-header
+    img.point-header__title(src="/img/points/h1_point-top.png")
+
+  .point
+    .point__title
+      | ご希望のCinderellaポイントを選んでください。
+    .point-purchase
+      .point-purchase__coin
+      .point-purchase__point-number
+        | 100
+      .point-purchase__point-text
+        | ポイント
+      .point-purchase__point-bonus
+          | +1コイン
+      .point-purchase__appendix
+        | ※土曜は110ポイント！
+      .point-purchase__button
+    .point-purchase
+    .point-purchase
+    .point-purchase
+
+  include /page/includes/footer

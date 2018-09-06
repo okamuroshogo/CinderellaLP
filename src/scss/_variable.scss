@@ -2,6 +2,8 @@ $pc_min_width: 800px;
 $sp_max_width: 450px;
 
 // see /src/constants.yml
+$min-width: 1200px;
+
 $img_dir: '/img/';
 
 $bg-dir: '/img/bg.png';
@@ -17,10 +19,10 @@ $font-title-size: 24px;
 $font-footer-size: 18px;
 $font-copyright: 14px;
 
-$padding-container: 18.75vw;
-$padding-pages-container: 12.5vw;
+$padding-container: 210px;
+$padding-pages-container: 140px;
 
-$padding-feature: 120px 7vw 120px 7vw;
+$padding-feature: 120px 70px;
 
 $padding-vertical-per-section: 100px;
 $padding-vertical-small: 50px;

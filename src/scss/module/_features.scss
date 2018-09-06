@@ -14,7 +14,7 @@
 }
 
 .feature__icons {
-  padding: $padding-vertical-small 0 $padding-vertical-small 0;
+  padding: $padding-vertical-small 0;
   display: flex;
   justify-content: space-between;
   @include sp-layout {
@@ -40,7 +40,7 @@
 
 .feature-icon-caption {
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
   text-align: center;
 }
 
@@ -55,7 +55,7 @@
 .feature__about-app {
   padding-top: $padding-vertical-per-section;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   @include sp-layout {
     padding-top: $padding-vertical-small;
     flex-direction: column;
@@ -64,7 +64,13 @@
 
 .feature__about-app--image-container {
   position: relative;
-  flex: 1;
+  @include pc-layout {
+    width: 50%;
+    float: left;
+  }
+  @include sp-layout {
+    flex: 1;
+  }
 }
 
 .feature__about-app--image {
@@ -73,7 +79,7 @@
     left: 0;
     top: 0;
     height: 500px;
-    transform: translate(-25px, -75px);
+    transform: translateY(-75px);
   }
   @include sp-layout {
     width: 50vw;
@@ -81,7 +87,12 @@
 }
 
 .feature__pre-registration {
-  flex: 1;
+  @include pc-layout {
+    width: 50%;
+  }
+  @include sp-layout {
+    flex: 1;
+  }
 }
 
 .feature__pre-registration-text > p {

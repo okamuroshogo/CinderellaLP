@@ -3,4 +3,7 @@
     font-size: $font-std-size;
     line-height: 1.5;
     background-image: url($bg-dir);
+    @include pc-layout {
+      min-width: $min-width;
+    }
 }

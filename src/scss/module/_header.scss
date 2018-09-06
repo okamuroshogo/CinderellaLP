@@ -15,7 +15,7 @@
   background: url('/img/hero.png') no-repeat center center;
   height: 40vw;
   @include pc-layout {
-    background-size: contain;
+    background-size: cover;
   }
   @include sp-layout {
     background-size: 150%;

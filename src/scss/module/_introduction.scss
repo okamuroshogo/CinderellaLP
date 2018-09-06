@@ -4,26 +4,26 @@
 
 .introduction__effect {
   position: absolute;
-  transform: scale(0.5);
+  @include pc-layout {
+    transform: scale(0.5);
+  }
+  @include sp-layout {
+    width: 300px;
+  }
 }
 
 .introduction__container {
   display: flex;
   @include pc-layout {
-    padding: $padding-vertical-per-section $padding-container $padding-vertical-per-section $padding-container;
+    padding: $padding-vertical-per-section $padding-container;
     justify-content: space-around;
   }
   @include sp-layout {
-    padding: $padding-vertical-per-section*0.5 0 $padding-vertical-per-section*0.5 0;
+    padding: $padding-vertical-per-section*0.5 0;
     justify-content: space-around;
   }
 }
 
-.introduction__effect {
-  @include sp-layout {
-    width: 200vw;
-  }
-}
 .introduction__effect--top {
   transform-origin: top left;
   top: -50px;
@@ -32,7 +32,7 @@
 
 .introduction__effect--bottom {
   transform-origin: bottom right;
-  bottom: 0;
+  bottom: -50px;
   right: 0;
 }
 
