@@ -8,6 +8,8 @@ $background-color-point-appendix: #55CECB;
 $color: white;
 $font-size-point-section: 13px;
 
+// process.html
+
 @mixin point-background ($url, $bg-size) {
   background: url($url) no-repeat center center;
   background-size: $bg-size;
@@ -197,35 +199,75 @@ $font-size-point-section: 13px;
   @include point-background('/img/points/p-yen.png', 45%);
 }
 
+// point.html
 
+.point {
+  margin-bottom: 50px;
+  background-color:	#E8EFF5;
+}
+
+.point-purchase__container {
+  padding: 0 12.5px;
+}
 
 .point-purchase {
-  height: 115px;
-  display: grid;
-  grid-template-columns: 2fr auto 1.5fr 4fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-   "coin point-number point-text button"
-   "coin point-number point-bonus button"
-   "coin appendix appendix button";
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  padding: 0 10px;
+  border-bottom: 1.5px solid rgba(165, 197, 191, 0.75);
 }
+
 .point-purchase__coin {
-  grid-area: coin;
-  @include point-background('/img/points/point_90px.png', 50%);
+  width: 15%;
+  @include sp-layout {
+    margin-right: 5px;
+  }
 }
-.point-purchase__point-number {
-  grid-area: point-number;
+.point-purchase__coin--image {
+  width: 100%;
+  @include sp-landscape-pc-layout {
+    display: block;
+    margin: 0 auto;
+    width: 75px;
+  }
 }
-.point-purchase__point-text {
-  grid-area: point-text;
+
+.point-purchase__number {
+  width: 35%;
+  @include sp-layout {
+    margin-right: 30px;
+  }
 }
-.point-purchase__point-bonus {
-  grid-area: point-bonus;
-}
-.point-purchase__appendix {
-  grid-area: appendix;
+.point-purchase__number--image {
+  transform-origin: center left;
+  transform: scale(0.5);
+  @include pc-layout {
+    display: block;
+    margin: 0 auto;
+    width: 275px;
+  }
 }
 
 .point-purchase__button {
-  grid-area: button;
+  width: 35%;
+}
+.point-purchase__button--image {
+  width: 100%;
+  @include sp-landscape-pc-layout {
+    display: block;
+    margin: 0 auto;
+    width: 175px;
+  }
+}
+
+.point-usage__button--image {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  @include sp-landscape-pc-layout {
+    width: 400px;
+  }
 }
