@@ -17,12 +17,10 @@
 
 a {
   text-decoration: none;
-}
-
-a:link {
-color:#55CECB;
-}
-
-a:visited {
-color:#001100;
+  &:link {
+    color:#e7f2f2
+  }
+  &:visited {
+    color:#001100;
+  }
 }
