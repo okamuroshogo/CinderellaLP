@@ -1,0 +1,54 @@
+.share {
+  text-align: center;
+  @include pc-layout {
+    padding: 0 $padding-container $padding-vertical-per-section $padding-container;
+  }
+}
+
+.share__container {
+  background-color: $bg-color-section;
+  padding: $padding-feature;
+}
+
+.share__thought, .share__app-problem {
+  @include pc-layout {
+    padding-bottom: $padding-vertical-per-section;
+  }
+  @include sp-layout {
+    padding-bottom: $padding-vertical-small;
+  }
+}
+
+.share__app-problem-explanation:not(:last-child) {
+  @include text-block;
+}
+
+.share__pre-registration-text > p {
+  @include text-block;
+}
+
+.share__pre-registration-button--image {
+  @include pc-layout {
+    padding-bottom: $padding-vertical-per-section;
+    width: 50%;
+  }
+  @include sp-layout {
+    padding-bottom: $padding-vertical-small;
+    width: 75%;
+  }
+}
+
+.share__precaution {
+  padding-bottom: $padding-vertical-per-section;
+}
+
+.share__sns-buttons {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.fb-share-button {
+  transform: translate(0, -4px);
+  padding: 0 10px 0 10px;
+}

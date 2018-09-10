@@ -1,0 +1,67 @@
+.introduction {
+  position: relative;
+}
+
+.introduction__effect {
+  position: absolute;
+  @include pc-layout {
+    transform: scale(0.5);
+  }
+  @include sp-layout {
+    width: 300px;
+  }
+}
+
+.introduction__container {
+  display: flex;
+  @include pc-layout {
+    padding: $padding-vertical-per-section $padding-container;
+    justify-content: space-around;
+  }
+  @include sp-layout {
+    padding: $padding-vertical-per-section*0.5 0;
+    justify-content: space-around;
+  }
+}
+
+.introduction__effect--top {
+  transform-origin: top left;
+  top: -50px;
+  left: 0;
+}
+
+.introduction__effect--bottom {
+  transform-origin: bottom right;
+  bottom: -50px;
+  right: 0;
+}
+
+.introduction__ornament {
+  transform-origin: top;
+  transform: translateY($padding-vertical-per-section * -0.75) scale(0.6);
+  object-fit: contain;
+  @include sp-layout {
+    display: none;
+  }
+}
+
+.introduction__content {
+  text-align: center;
+  padding: $padding-vertical-small*0.5;
+  & p {
+    color: white;
+  }
+}
+
+.introduction__explanation {
+  @include pc-layout {
+    padding-top: $padding-vertical-per-section;
+  }
+  @include sp-layout {
+    padding-top: $padding-vertical-per-section*0.5;
+  }
+}
+
+.introduction__explanation-content:not(:last-child) {
+  @include text-block;
+}

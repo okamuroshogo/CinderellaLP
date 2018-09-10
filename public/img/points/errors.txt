@@ -1,0 +1,4 @@
+[7/21/2018, 11:15:59 AM] layer "+1コイン": Expected Either a default asset specification or a layer asset specification but "+" found.
+[7/21/2018, 11:15:59 AM] layer "+3コイン": Expected Either a default asset specification or a layer asset specification but "+" found.
+[7/21/2018, 11:15:59 AM] layer "+5コイン": Expected Either a default asset specification or a layer asset specification but "+" found.
+[7/21/2018, 11:15:59 AM] layer "+10コイン": Expected Either a default asset specification or a layer asset specification but "+" found.

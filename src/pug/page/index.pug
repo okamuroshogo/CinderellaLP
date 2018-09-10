@@ -7,6 +7,24 @@ prepend config-block
 
 //- append javascript-block
 
+block sns-block
+  #fb-root
+  script(type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async")
+  script(src='/js/sns.js')
+
 block content-block
-  .sample-icon
-  | hello, world!
+  include includes/header.pug
+  .hero
+
+  include includes/introduction.pug
+  include includes/features.pug
+  include includes/share.pug
+  include includes/footer.pug
+
+
+
+
+
+
+
+

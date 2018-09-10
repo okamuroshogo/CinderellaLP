@@ -1,0 +1,273 @@
+$height-point-section: 115px;
+$padding-left-right: 5vw;
+$background-color-point-title: #48969A;
+$background-color-point-explanation-title: #44C3C2;
+$background-color-point-explanation: #69E0D9;
+$background-color-point-content: #CDF0EE;
+$background-color-point-appendix: #55CECB;
+$color: white;
+$font-size-point-section: 13px;
+
+// process.html
+
+@mixin point-background ($url, $bg-size) {
+  background: url($url) no-repeat center center;
+  background-size: $bg-size;
+  height: 100%;
+  @include sp-landscape-layout {
+    background-size: $bg-size*0.5;
+  }
+  @include pc-layout {
+    background-size: $bg-size*0.5;
+  }
+}
+
+@mixin point-header-content ($number) {
+  padding-bottom: 10px;
+  &::before {
+    display: inline-block;
+    background-color: #3F7974;
+    content: "#{$number}";
+    text-align: center;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+  }
+}
+
+.point-header {
+  position: relative;
+  background: url('/img/points/bg_shine.png');
+  background-position: 35% 20%;
+  background-size: cover;
+}
+
+.point-header__title {
+  padding: 25px 0;
+  display: block;
+  top: 0;
+  margin: 0 auto;
+  width: 80%;
+  @include pc-layout {
+    width: 40%;
+  }
+}
+
+.point--last {
+  margin-bottom: 40px;
+}
+
+.point__content {
+  background-color: $background-color-point-content;
+  padding: 20px $padding-left-right;
+}
+.point__content.point__content--large-padding-bottom {
+  padding-bottom: 60px;
+}
+
+.point__title {
+  background-color: $background-color-point-title;
+  padding: 5px $padding-left-right;
+  color: $color;
+  letter-spacing: 3px;
+  font-size: $font-size-point-section + 3px;
+  @include pc-layout {
+    font-size: $font-size-point-section + 7px;
+  }
+}
+
+.point__appendix {
+  background-color: $background-color-point-appendix;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $color;
+  border-radius: 17.5px;
+  font-size: $font-size-point-section - 0.5px;
+  @include pc-layout {
+    font-size: $font-size-point-section + 3.5px;
+  }
+}
+
+.point__section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.point__section-header-number {
+  display: inline-block;
+  background-color: #3F7974;
+  text-align: center;
+  border-radius: 50%;
+  font-size: $font-size-point-section;
+  height: $font-size-point-section + 6px;
+  width: $font-size-point-section + 6px;
+  margin-right: 2px;
+  color: $color;
+  @include pc-layout {
+    font-size: $font-size-point-section + 4px;
+    height: $font-size-point-section + 10px;
+    width: $font-size-point-section + 10px;
+  }
+}
+
+.point__section-header-content {
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: $font-size-point-section + 0.5px;
+  @include pc-layout {
+    font-size: $font-size-point-section + 4.5px;
+  }
+}
+
+.point__section-content {
+  display: flex;
+  justify-content: center;
+}
+.point__section-content--large {
+  height: $height-point-section;
+  @include pc-layout {
+    height: $height-point-section*2;
+  }
+}
+.point__section-content--small {
+  height: $height-point-section*0.85;
+  @include pc-layout {
+    height: $height-point-section*2*0.85;
+  }
+}
+
+.point__explanation {
+  flex: 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.point__explanation-title {
+  background-color: $background-color-point-explanation-title;
+  padding: 6px 0 6px 0;
+  border-radius: 20px 20px 0 0;
+  color: $color;
+}
+
+.point__explanation-picture {
+  background-color: $background-color-point-explanation;
+  height: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+.point__explanation-arrow {
+  @include point-background('/img/points/icon_arrow-big.png', 40%);
+  width: 20%;
+  flex: 1;
+}
+.point__explanation-arrow--small {
+  @include point-background('/img/points/icon_arrow-small.png', 40%);
+  flex: 1;
+}
+
+.point__explanation-picture--3-points {
+  @include point-background('/img/points/point_3.png', 47.5%);
+}
+.point__explanation-picture--5-points {
+  @include point-background('/img/points/point_5.png', 70%);
+}
+.point__explanation-picture--10-points {
+  @include point-background('/img/points/point_10.png', 50%);
+}
+.point__explanation-picture--50-points {
+  @include point-background('/img/points/point_50.png', 75%);
+}
+.point__explanation-picture--board {
+  @include point-background('/img/points/icon_board.png', 40%);
+}
+.point__explanation-picture--heart {
+  @include point-background('/img/points/icon_heart.png', 40%);
+}
+.point__explanation-picture--chat {
+  @include point-background('/img/points/icon_chat.png', 40%);
+}
+.point__explanation-picture--video {
+  @include point-background('/img/points/icon_video.png', 40%);
+}
+.point__explanation-picture--coin {
+  @include point-background('/img/points/p-coin.png', 45%);
+}
+.point__explanation-picture--yen {
+  @include point-background('/img/points/p-yen.png', 45%);
+}
+
+// point.html
+
+.point {
+  margin-bottom: 50px;
+  background-color:	#E8EFF5;
+}
+
+.point-purchase__container {
+  padding: 0 12.5px;
+}
+
+.point-purchase {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  padding: 0 10px;
+  border-bottom: 1.5px solid rgba(165, 197, 191, 0.75);
+}
+
+.point-purchase__coin {
+  width: 15%;
+  @include sp-layout {
+    margin-right: 5px;
+  }
+}
+.point-purchase__coin--image {
+  width: 100%;
+  @include sp-landscape-pc-layout {
+    display: block;
+    margin: 0 auto;
+    width: 75px;
+  }
+}
+
+.point-purchase__number {
+  width: 35%;
+  @include sp-layout {
+    margin-right: 30px;
+  }
+}
+.point-purchase__number--image {
+  transform-origin: center left;
+  transform: scale(0.5);
+  @include pc-layout {
+    display: block;
+    margin: 0 auto;
+    width: 275px;
+  }
+}
+
+.point-purchase__button {
+  width: 35%;
+}
+.point-purchase__button--image {
+  width: 100%;
+  @include sp-landscape-pc-layout {
+    display: block;
+    margin: 0 auto;
+    width: 175px;
+  }
+}
+
+.point-usage__button--image {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  @include sp-landscape-pc-layout {
+    width: 400px;
+  }
+}

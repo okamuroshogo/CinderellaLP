@@ -1,0 +1,109 @@
+.features {
+  text-align: center;
+  @include pc-layout {
+    padding: 0 $padding-container $padding-vertical-per-section $padding-container;
+  }
+  @include sp-layout {
+    padding-bottom: $padding-vertical-per-section;
+  }
+}
+
+.features__container {
+  background-color: $bg-color-section;
+  padding: $padding-feature;
+}
+
+.feature__icons {
+  padding: $padding-vertical-small 0;
+  display: flex;
+  justify-content: space-between;
+  @include sp-layout {
+    flex-direction: column;
+  }
+}
+
+.feature__icons-container {
+  flex: 1;
+  @include sp-layout {
+    padding-bottom: 30px;
+  }
+}
+
+.feature-icon {
+  width: 90%;
+  padding-bottom: $padding-vertical-small;
+  @include sp-layout {
+    padding-bottom: 0;
+    width: 50%;
+  }
+}
+
+.feature-icon-caption {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+.feature-icon-caption-title {
+  padding-bottom: $padding-vertical-small*0.5;
+}
+
+.feature__invite {
+  padding-top: $padding-vertical-small;
+}
+
+.feature__about-app {
+  padding-top: $padding-vertical-per-section;
+  display: flex;
+  justify-content: space-around;
+  @include sp-layout {
+    padding-top: $padding-vertical-small;
+    flex-direction: column;
+  }
+}
+
+.feature__about-app--image-container {
+  position: relative;
+  @include pc-layout {
+    width: 50%;
+    float: left;
+  }
+  @include sp-layout {
+    flex: 1;
+  }
+}
+
+.feature__about-app--image {
+  @include pc-layout {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 500px;
+    transform: translateY(-75px);
+  }
+  @include sp-layout {
+    width: 50vw;
+  }
+}
+
+.feature__pre-registration {
+  @include pc-layout {
+    width: 50%;
+  }
+  @include sp-layout {
+    flex: 1;
+  }
+}
+
+.feature__pre-registration-text > p {
+  padding-bottom: $padding-vertical-small/2;
+}
+
+.feature__pre-registration-button--image {
+  padding-bottom: $padding-vertical-small/2;
+  width: 100%;
+}
+
+.feature__pre-registration-app-stores--image {
+  width: 50%;
+}

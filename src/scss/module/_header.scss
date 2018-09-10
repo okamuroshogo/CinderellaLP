@@ -1,0 +1,23 @@
+.header {
+  position: relative;
+  background: url('/img/logo.png') no-repeat center center;
+  @include pc-layout {
+    height: $height-header;
+    background-size: 25vh;
+  }
+  @include sp-layout {
+    height: $height-header*0.5;
+    background-size: 20vh;
+  }
+}
+
+.hero {
+  background: url('/img/hero.png') no-repeat center center;
+  height: 40vw;
+  @include pc-layout {
+    background-size: cover;
+  }
+  @include sp-layout {
+    background-size: 150%;
+  }
+}

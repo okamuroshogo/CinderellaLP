@@ -1,4 +1,32 @@
 $pc_min_width: 800px;
+$sp_max_width: 450px;
 
 // see /src/constants.yml
+$min-width: 1200px;
+
 $img_dir: '/img/';
+
+$bg-dir: '/img/bg.png';
+
+$color-text-heading: #176461;
+$color-text-shadow: rgba(0, 53, 51, 0.4);
+
+$bg-color-section: #e7f2f2;
+$bg-color-footer: #47999c;
+
+$font-std-size: 16px;
+$font-title-size: 24px;
+$font-footer-size: 18px;
+$font-copyright: 14px;
+
+$padding-container: 210px;
+$padding-pages-container: 140px;
+
+$padding-feature: 120px 70px;
+
+$padding-vertical-per-section: 100px;
+$padding-vertical-small: 50px;
+$padding-vertical-footer: 150px;
+
+$height-header: 120px;
+$height-footer: 130px;

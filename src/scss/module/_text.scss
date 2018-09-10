@@ -1,0 +1,26 @@
+.text-content, .text-title {
+  line-height: 2;
+  text-shadow: 2.5px 2.5px 4px $color-text-shadow;
+  color: #176461;
+}
+
+.text-title {
+  font-size: $font-title-size;
+}
+
+.text-footer {
+  font-size: $font-footer-size;
+  padding: 10px;
+  @include sp-layout {
+  }
+}
+
+a {
+  text-decoration: none;
+  &:link {
+    color:#e7f2f2
+  }
+  &:visited {
+    color:#001100;
+  }
+}
