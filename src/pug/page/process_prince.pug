@@ -1,0 +1,92 @@
+extends /layout/_default-layout
+
+block content-block
+
+  header.point-header
+    img.point-header__title(src="/img/points/h1_process.png")
+
+  .point
+    .point__title
+      | Cinderellaポイントは何に使えるの？
+    .point__content
+      .point__section
+        .point__section-header
+          .point__section-header-number
+            | 1
+          .point__section-header-content
+            | 3ポイントで提示板投稿ができる！
+        .point__section-content.point__section-content--large
+          .point__explanation
+            .point__explanation-title
+              | 3ポイントで
+            .point__explanation-picture
+              .point__explanation-picture--3-points
+          .point__explanation-arrow
+          .point__explanation
+            .point__explanation-title
+              | 提示板に投稿
+            .point__explanation-picture
+              .point__explanation-picture--board
+      .point__section
+        .point__section-header
+          .point__section-header-number
+            | 2
+          .point__section-header-content
+            | 3ポイントで気になった投稿に「いいね」できる！
+        .point__section-content.point__section-content--large
+          .point__explanation
+            .point__explanation-title
+              | 3ポイントで
+            .point__explanation-picture
+              .point__explanation-picture--3-points
+          .point__explanation-arrow
+          .point__explanation
+            .point__explanation-title
+              | 投稿にいいね！
+            .point__explanation-picture
+              .point__explanation-picture--heart
+      .point__section
+        .point__section-header
+          .point__section-header-number
+            | 3
+          .point__section-header-content
+            | 5ポイントでチャットルームを作成できる！
+        .point__section-content.point__section-content--large
+          .point__explanation
+            .point__explanation-title
+              | 5ポイントで
+            .point__explanation-picture
+              .point__explanation-picture--5-points
+          .point__explanation-arrow
+          .point__explanation
+            .point__explanation-title
+              | ルーム作成
+            .point__explanation-picture
+              .point__explanation-picture--chat
+      .point__appendix
+        | ※1度ルームを作成すれば、メッセージは送り放題です。
+
+  .point
+    .point__title
+      | 無料でポイントを追加するには？
+    .point__content.point__content--large-padding-bottom
+      .point__section
+        .point__section-header
+          .point__section-header-content
+            | 広告動画を見ると、50ptがもらえる！
+        .point__section-content.point__section-content--large
+          .point__explanation
+            .point__explanation-title
+              | 広告動画視聴で
+            .point__explanation-picture
+              .point__explanation-picture--video
+          .point__explanation-arrow
+          .point__explanation
+            .point__explanation-title
+              | 50ptをGET!
+            .point__explanation-picture
+              .point__explanation-picture--50-points
+      .point__appendix
+        | 1日1回限定！※24時間毎に動画が更新されます。
+
+  include /page/includes/footer
