@@ -12,12 +12,14 @@
 }
 
 .hero {
-  background: url('/img/hero.png') no-repeat center center;
-  height: 40vw;
   @include pc-layout {
+    height: 40vw;
+    background: url('/img/hero_pc.png') no-repeat center center;
     background-size: cover;
   }
   @include sp-layout {
-    background-size: 150%;
+    height: 60vw;
+    background: url('/img/hero_sp.png') no-repeat center center;
+    background-size: cover;
   }
 }
