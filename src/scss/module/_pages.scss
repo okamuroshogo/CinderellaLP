@@ -12,6 +12,9 @@
 .pages-container { 
   background-color: $bg-color-section;
   padding: $padding-feature;
+  @include sp-layout {
+    padding: $padding-feature-sp;
+  }
 }
 
 .pages-container--center { 

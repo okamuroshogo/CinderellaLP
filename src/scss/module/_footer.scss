@@ -9,11 +9,11 @@
     color: white;
   }
   @include pc-layout {
-    padding: 20px $padding-pages-container;
+    padding: 20px $padding-horizontal-feature;
     height: $height-footer;
   }
   @include sp-layout {
-    padding: 20px $padding-container/2;
+    padding: 20px $padding-horizontal-feature-sp;
   }
 }
 
