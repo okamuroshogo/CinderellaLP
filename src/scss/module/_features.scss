@@ -11,6 +11,9 @@
 .features__container {
   background-color: $bg-color-section;
   padding: $padding-feature;
+  @include sp-layout {
+    padding: $padding-feature-sp;
+  }
 }
 
 .feature__icons {

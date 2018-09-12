@@ -22,7 +22,12 @@ $font-copyright: 14px;
 $padding-container: 210px;
 $padding-pages-container: 140px;
 
-$padding-feature: 120px 70px;
+$padding-vertical-feature: 120px;
+$padding-horizontal-feature: 70px;
+$padding-horizontal-feature-sp: 30px;
+
+$padding-feature: $padding-vertical-feature $padding-horizontal-feature;
+$padding-feature-sp: $padding-vertical-feature $padding-horizontal-feature-sp;
 
 $padding-vertical-per-section: 100px;
 $padding-vertical-small: 50px;
