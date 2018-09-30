@@ -1,0 +1,619 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+body {
+  -webkit-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
+
+.animate {
+  visibility: hidden;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s; }
+
+.text-content, .text-title {
+  line-height: 2;
+  text-shadow: 2.5px 2.5px 4px rgba(0, 53, 51, 0.4);
+  color: #176461;
+  padding-bottom: 12.5px; }
+
+.text-title {
+  font-size: 24px; }
+
+.text-footer {
+  font-size: 18px;
+  padding: 10px; }
+
+a {
+  text-decoration: none; }
+  a:link {
+    color: #e7f2f2; }
+  a:visited {
+    color: #001100; }
+
+.wrapper {
+  font-family: komorebiGothic;
+  font-size: 16px;
+  line-height: 1.5;
+  background-image: url("/img/bg.png"); }
+
+.header {
+  position: relative;
+  background: url("/img/logo.png") no-repeat center center; }
+
+.introduction {
+  position: relative; }
+
+.introduction__effect {
+  position: absolute; }
+
+.introduction__container {
+  display: flex; }
+
+.introduction__effect--top {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  top: -50px;
+  left: 0; }
+
+.introduction__effect--bottom {
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  bottom: -50px;
+  right: 0; }
+
+.introduction__content {
+  text-align: center;
+  padding: 25px; }
+  .introduction__content p {
+    color: white; }
+
+.introduction__explanation-content:not(:last-child) {
+  padding-bottom: 37.5px; }
+
+.features {
+  text-align: center; }
+
+.features__container {
+  background-color: #e7f2f2;
+  padding: 120px 70px; }
+
+.feature__icons {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between; }
+
+.feature__icons-container {
+  flex: 1; }
+
+.feature-icon {
+  width: 90%;
+  padding-bottom: 50px; }
+
+.feature-icon-caption {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center; }
+
+.feature-icon-caption-title {
+  padding-bottom: 25px; }
+
+.feature__invite {
+  padding-top: 50px; }
+
+.feature__about-app {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around; }
+
+.feature__about-app--image-container {
+  position: relative; }
+
+.feature__pre-registration-text > p {
+  padding-bottom: 25px; }
+
+.feature__pre-registration-button--image {
+  padding-bottom: 25px;
+  width: 100%; }
+
+.feature__pre-registration-app-stores--image {
+  width: 50%; }
+
+.share {
+  text-align: center; }
+
+.share__container {
+  background-color: #e7f2f2;
+  padding: 120px 70px; }
+
+.share__app-problem-explanation:not(:last-child) {
+  padding-bottom: 37.5px; }
+
+.share__pre-registration-text > p {
+  padding-bottom: 37.5px; }
+
+.share__precaution {
+  padding-bottom: 100px; }
+
+.share__sns-buttons {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center; }
+
+.fb-share-button {
+  -webkit-transform: translate(0, -4px);
+          transform: translate(0, -4px);
+  padding: 0 10px 0 10px; }
+
+.footer {
+  background-color: #47999c;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box; }
+  .footer p {
+    color: white; }
+
+.footer__menu {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center; }
+
+.footer__copyright {
+  text-align: center; }
+
+.pages-container {
+  background-color: #e7f2f2;
+  padding: 120px 70px; }
+
+.pages-container--center {
+  margin: 0 auto; }
+
+.section {
+  padding-bottom: 50px; }
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px; }
+
+.section-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px; }
+
+.section-title--left {
+  text-align: left; }
+
+.section-content {
+  line-height: 2;
+  font-size: 1.1em; }
+
+.form {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.point-header {
+  position: relative;
+  background: url("/img/points/bg_shine.png");
+  background-position: 35% 20%;
+  background-size: cover; }
+
+.point-header__title {
+  padding: 25px 0;
+  display: block;
+  top: 0;
+  margin: 0 auto;
+  width: 80%; }
+
+.point--last {
+  margin-bottom: 40px; }
+
+.point__content {
+  background-color: #CDF0EE;
+  padding: 20px 5vw; }
+
+.point__content.point__content--large-padding-bottom {
+  padding-bottom: 60px; }
+
+.point__title {
+  background-color: #48969A;
+  padding: 5px 5vw;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 16px; }
+
+.point__appendix {
+  background-color: #55CECB;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 17.5px;
+  font-size: 12.5px; }
+
+.point__section {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.point__section-header-number {
+  display: inline-block;
+  background-color: #3F7974;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 13px;
+  height: 19px;
+  width: 19px;
+  margin-right: 2px;
+  color: white; }
+
+.point__section-header-content {
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 13.5px; }
+
+.point__section-content {
+  display: flex;
+  justify-content: center; }
+
+.point__section-content--large {
+  height: 115px; }
+
+.point__section-content--small {
+  height: 97.75px; }
+
+.point__explanation {
+  flex: 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+
+.point__explanation-title {
+  background-color: #44C3C2;
+  padding: 6px 0 6px 0;
+  border-radius: 20px 20px 0 0;
+  color: white; }
+
+.point__explanation-picture {
+  background-color: #69E0D9;
+  height: 100%;
+  border-radius: 0 0 20px 20px; }
+
+.point__explanation-arrow {
+  background: url("/img/points/icon_arrow-big.png") no-repeat center center;
+  background-size: 40%;
+  height: 100%;
+  width: 20%;
+  flex: 1; }
+
+.point__explanation-arrow--small {
+  background: url("/img/points/icon_arrow-small.png") no-repeat center center;
+  background-size: 40%;
+  height: 100%;
+  flex: 1; }
+
+.point__explanation-picture--3-points {
+  background: url("/img/points/point_3.png") no-repeat center center;
+  background-size: 47.5%;
+  height: 100%; }
+
+.point__explanation-picture--5-points {
+  background: url("/img/points/point_5.png") no-repeat center center;
+  background-size: 70%;
+  height: 100%; }
+
+.point__explanation-picture--10-points {
+  background: url("/img/points/point_10.png") no-repeat center center;
+  background-size: 50%;
+  height: 100%; }
+
+.point__explanation-picture--50-points {
+  background: url("/img/points/point_50.png") no-repeat center center;
+  background-size: 75%;
+  height: 100%; }
+
+.point__explanation-picture--board {
+  background: url("/img/points/icon_board.png") no-repeat center center;
+  background-size: 40%;
+  height: 100%; }
+
+.point__explanation-picture--heart {
+  background: url("/img/points/icon_heart.png") no-repeat center center;
+  background-size: 40%;
+  height: 100%; }
+
+.point__explanation-picture--chat {
+  background: url("/img/points/icon_chat.png") no-repeat center center;
+  background-size: 40%;
+  height: 100%; }
+
+.point__explanation-picture--video {
+  background: url("/img/points/icon_video.png") no-repeat center center;
+  background-size: 40%;
+  height: 100%; }
+
+.point__explanation-picture--coin {
+  background: url("/img/points/p-coin.png") no-repeat center center;
+  background-size: 45%;
+  height: 100%; }
+
+.point__explanation-picture--yen {
+  background: url("/img/points/p-yen.png") no-repeat center center;
+  background-size: 45%;
+  height: 100%; }
+
+.point {
+  margin-bottom: 50px;
+  background-color: #E8EFF5; }
+
+.point-purchase__container {
+  padding: 0 12.5px; }
+
+.point-purchase {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  padding: 0 10px;
+  border-bottom: 1.5px solid rgba(165, 197, 191, 0.75); }
+
+.point-purchase__coin {
+  width: 15%; }
+
+.point-purchase__coin--image {
+  width: 100%; }
+
+.point-purchase__number {
+  width: 35%; }
+
+.point-purchase__number--image {
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5); }
+
+.point-purchase__button {
+  width: 35%; }
+
+.point-purchase__button--image {
+  width: 100%; }
+
+.point-usage__button--image {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px; }
+
+@font-face {
+  font-family: komorebiGothic;
+  src: url(/font/komorebi-gothic-P.ttf); }
+
+@media (min-width: 800px) {
+    .wrapper {
+      min-width: 1200px; }
+    .header {
+      height: 120px;
+      background-size: 25vh; }
+  .hero {
+    height: 40vw;
+    background: url("/img/hero_pc.png") no-repeat center center;
+    background-size: cover; }
+    .introduction__effect {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5); }
+    .introduction__container {
+      padding: 100px 210px;
+      justify-content: space-around; }
+  .introduction__explanation {
+    padding-top: 100px; }
+    .features {
+      padding: 0 210px 100px 210px; }
+    .feature__about-app--image-container {
+      width: 50%;
+      float: left; }
+  .feature__about-app--image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 500px;
+    -webkit-transform: translateY(-75px);
+            transform: translateY(-75px); }
+  .feature__pre-registration {
+    width: 50%; }
+    .share {
+      padding: 0 210px 100px 210px; }
+  .share__thought, .share__app-problem {
+    padding-bottom: 100px; }
+  .share__pre-registration-button--image {
+    padding-bottom: 100px;
+    width: 50%; }
+    .footer {
+      padding: 20px 70px;
+      height: 130px; }
+  .pages {
+    padding: 0 140px 50px 140px; }
+    .form {
+      width: 700px; }
+    .point-header__title {
+      width: 40%; }
+    .point__title {
+      font-size: 20px; }
+    .point__appendix {
+      font-size: 16.5px; }
+    .point__section-header-number {
+      font-size: 17px;
+      height: 23px;
+      width: 23px; }
+    .point__section-header-content {
+      font-size: 17.5px; }
+    .point__section-content--large {
+      height: 230px; }
+    .point__section-content--small {
+      height: 195.5px; }
+    .point__explanation-arrow {
+      background-size: 20%; }
+    .point__explanation-arrow--small {
+      background-size: 20%; }
+    .point__explanation-picture--3-points {
+      background-size: 23.75%; }
+    .point__explanation-picture--5-points {
+      background-size: 35%; }
+    .point__explanation-picture--10-points {
+      background-size: 25%; }
+    .point__explanation-picture--50-points {
+      background-size: 37.5%; }
+    .point__explanation-picture--board {
+      background-size: 20%; }
+    .point__explanation-picture--heart {
+      background-size: 20%; }
+    .point__explanation-picture--chat {
+      background-size: 20%; }
+    .point__explanation-picture--video {
+      background-size: 20%; }
+    .point__explanation-picture--coin {
+      background-size: 22.5%; }
+    .point__explanation-picture--yen {
+      background-size: 22.5%; }
+    .point-purchase__number--image {
+      display: block;
+      margin: 0 auto;
+      width: 275px; } }
+
+@media (max-width: 799px) {
+    .header {
+      height: 60px;
+      background-size: 20vh; }
+  .hero {
+    height: 60vw;
+    background: url("/img/hero_sp.png") no-repeat center center;
+    background-size: cover; }
+    .introduction__effect {
+      width: 300px; }
+    .introduction__container {
+      padding: 50px 0;
+      justify-content: space-around; }
+  .introduction__explanation {
+    padding-top: 50px; }
+    .features {
+      padding-bottom: 100px; }
+    .features__container {
+      padding: 120px 30px; }
+    .feature__icons {
+      flex-direction: column; }
+    .feature__icons-container {
+      padding-bottom: 30px; }
+    .feature-icon {
+      padding-bottom: 0;
+      width: 50%; }
+    .feature__about-app {
+      padding-top: 50px;
+      flex-direction: column; }
+    .feature__about-app--image-container {
+      flex: 1; }
+  .feature__about-app--image {
+    width: 50vw; }
+  .feature__pre-registration {
+    flex: 1; }
+    .share__container {
+      padding: 120px 30px; }
+  .share__thought, .share__app-problem {
+    padding-bottom: 50px; }
+  .share__pre-registration-button--image {
+    padding-bottom: 50px;
+    width: 75%; }
+    .footer {
+      padding: 20px 30px; }
+    .footer__menu {
+      flex-direction: column; }
+  .pages {
+    padding: 0; }
+    .pages-container {
+      padding: 120px 30px; }
+    .point-purchase__coin {
+      margin-right: 5px; }
+    .point-purchase__number {
+      margin-right: 30px; } }
+
+@media (min-width: 450px) and (max-width: 799px) {
+    .point__explanation-arrow {
+      background-size: 20%; }
+    .point__explanation-arrow--small {
+      background-size: 20%; }
+    .point__explanation-picture--3-points {
+      background-size: 23.75%; }
+    .point__explanation-picture--5-points {
+      background-size: 35%; }
+    .point__explanation-picture--10-points {
+      background-size: 25%; }
+    .point__explanation-picture--50-points {
+      background-size: 37.5%; }
+    .point__explanation-picture--board {
+      background-size: 20%; }
+    .point__explanation-picture--heart {
+      background-size: 20%; }
+    .point__explanation-picture--chat {
+      background-size: 20%; }
+    .point__explanation-picture--video {
+      background-size: 20%; }
+    .point__explanation-picture--coin {
+      background-size: 22.5%; }
+    .point__explanation-picture--yen {
+      background-size: 22.5%; } }
+
+@media (min-width: 450px) {
+    .point-purchase__coin--image {
+      display: block;
+      margin: 0 auto;
+      width: 75px; }
+    .point-purchase__button--image {
+      display: block;
+      margin: 0 auto;
+      width: 175px; }
+    .point-usage__button--image {
+      width: 400px; } }

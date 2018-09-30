@@ -9,6 +9,7 @@
 }
 
 .features__container {
+  margin-top: 100px;
   background-color: $bg-color-section;
   padding: $padding-feature;
   @include sp-layout {
@@ -43,12 +44,14 @@
 
 .feature-icon-caption {
   margin: 0 auto;
-  width: 90%;
-  text-align: center;
+  width: 70%;
+  text-align: left;
 }
 
 .feature-icon-caption-title {
   padding-bottom: $padding-vertical-small*0.5;
+  text-align: center;
+  font-weight: bold; 
 }
 
 .feature__invite {
