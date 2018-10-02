@@ -260,17 +260,14 @@ a {
 
 .point__content {
   background-color: #CDF0EE;
-  padding: 20px 5vw; }
-
-.point__content.point__content--large-padding-bottom {
-  padding-bottom: 60px; }
+  padding: 15px 5vw;
+  padding-bottom: 45px; }
 
 .point__title {
   background-color: #48969A;
   padding: 5px 5vw;
   color: white;
-  letter-spacing: 3px;
-  font-size: 16px; }
+  letter-spacing: 3px; }
 
 .point__appendix {
   background-color: #55CECB;
@@ -278,8 +275,7 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
-  border-radius: 17.5px;
-  font-size: 12.5px; }
+  border-radius: 17.5px; }
 
 .point__section {
   padding-top: 10px;
@@ -290,7 +286,6 @@ a {
   background-color: #3F7974;
   text-align: center;
   border-radius: 50%;
-  font-size: 13px;
   height: 19px;
   width: 19px;
   margin-right: 2px;
@@ -299,7 +294,7 @@ a {
 .point__section-header-content {
   display: inline-block;
   padding-bottom: 10px;
-  font-size: 13.5px; }
+  color: #3F7974; }
 
 .point__section-content {
   display: flex;
@@ -323,6 +318,13 @@ a {
   border-radius: 20px 20px 0 0;
   color: white; }
 
+.point__explanation-no-picture {
+  background-color: #69E0D9;
+  height: 100%;
+  border-radius: 20px;
+  color: white;
+  line-height: 115px; }
+
 .point__explanation-picture {
   background-color: #69E0D9;
   height: 100%;
@@ -340,6 +342,11 @@ a {
   background-size: 40%;
   height: 100%;
   flex: 1; }
+
+.point__explanation-picture--1-point {
+  background: url("/img/points/point_90px.png") no-repeat center center;
+  background-size: 40%;
+  height: 100%; }
 
 .point__explanation-picture--3-points {
   background: url("/img/points/point_3.png") no-repeat center center;
@@ -392,7 +399,6 @@ a {
   height: 100%; }
 
 .point {
-  margin-bottom: 50px;
   background-color: #E8EFF5; }
 
 .point-purchase__container {
@@ -490,7 +496,8 @@ a {
     .point__appendix {
       font-size: 16.5px; }
     .point__section-header-number {
-      font-size: 17px;
+      font-size: 17px; }
+    .point__section-header-number {
       height: 23px;
       width: 23px; }
     .point__section-header-content {
@@ -499,9 +506,17 @@ a {
       height: 230px; }
     .point__section-content--small {
       height: 195.5px; }
+    .point__explanation-title {
+      font-size: 21px; }
+    .point__explanation-no-picture {
+      font-size: 21px; }
+    .point__explanation-no-picture {
+      line-height: 230px; }
     .point__explanation-arrow {
       background-size: 20%; }
     .point__explanation-arrow--small {
+      background-size: 20%; }
+    .point__explanation-picture--1-point {
       background-size: 20%; }
     .point__explanation-picture--3-points {
       background-size: 23.75%; }
@@ -578,6 +593,18 @@ a {
     padding: 0; }
     .pages-container {
       padding: 120px 30px; }
+    .point__title {
+      font-size: 16px; }
+    .point__appendix {
+      font-size: 12.5px; }
+    .point__section-header-number {
+      font-size: 13px; }
+    .point__section-header-content {
+      font-size: 13.5px; }
+    .point__explanation-title {
+      font-size: 17px; }
+    .point__explanation-no-picture {
+      font-size: 17px; }
     .point-purchase__coin {
       margin-right: 5px; }
     .point-purchase__number {
@@ -587,6 +614,8 @@ a {
     .point__explanation-arrow {
       background-size: 20%; }
     .point__explanation-arrow--small {
+      background-size: 20%; }
+    .point__explanation-picture--1-point {
       background-size: 20%; }
     .point__explanation-picture--3-points {
       background-size: 23.75%; }
