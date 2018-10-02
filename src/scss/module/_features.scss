@@ -9,7 +9,7 @@
 }
 
 .features__container {
-  margin-top: 100px;
+  margin-top: $padding-vertical-per-section;
   background-color: $bg-color-section;
   padding: $padding-feature;
   @include sp-layout {
