@@ -5,8 +5,10 @@ $background-color-point-explanation-title: #44C3C2;
 $background-color-point-explanation: #69E0D9;
 $background-color-point-content: #CDF0EE;
 $background-color-point-appendix: #55CECB;
-$color: white;
+$font-color-default: white;
+$font-color-header: #3F7974;
 $font-size-point-section: 13px;
+$font-size-point-title: 17px;
 
 // process.html
 
@@ -26,13 +28,22 @@ $font-size-point-section: 13px;
   padding-bottom: 10px;
   &::before {
     display: inline-block;
-    background-color: #3F7974;
+    background-color: $font-color-header;
     content: "#{$number}";
     text-align: center;
     border-radius: 50%;
     height: 24px;
     width: 24px;
     margin-right: 10px;
+  }
+}
+
+@mixin font-size ($font-size) {
+  @include pc-layout {
+    font-size: $font-size + 4px;
+  }
+  @include sp-layout {
+    font-size: $font-size;
   }
 }
 
@@ -60,21 +71,16 @@ $font-size-point-section: 13px;
 
 .point__content {
   background-color: $background-color-point-content;
-  padding: 20px $padding-left-right;
-}
-.point__content.point__content--large-padding-bottom {
-  padding-bottom: 60px;
+  padding: 15px $padding-left-right;
+  padding-bottom: 45px;
 }
 
 .point__title {
   background-color: $background-color-point-title;
   padding: 5px $padding-left-right;
-  color: $color;
+  color: $font-color-default;
   letter-spacing: 3px;
-  font-size: $font-size-point-section + 3px;
-  @include pc-layout {
-    font-size: $font-size-point-section + 7px;
-  }
+  @include font-size($font-size-point-section + 3px);
 }
 
 .point__appendix {
@@ -82,12 +88,9 @@ $font-size-point-section: 13px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: $color;
+  color: $font-color-default;
   border-radius: 17.5px;
-  font-size: $font-size-point-section - 0.5px;
-  @include pc-layout {
-    font-size: $font-size-point-section + 3.5px;
-  }
+  @include font-size($font-size-point-section - 0.5px);
 }
 
 .point__section {
@@ -97,16 +100,15 @@ $font-size-point-section: 13px;
 
 .point__section-header-number {
   display: inline-block;
-  background-color: #3F7974;
+  background-color: $font-color-header;
   text-align: center;
   border-radius: 50%;
-  font-size: $font-size-point-section;
+  @include font-size($font-size-point-section);
   height: $font-size-point-section + 6px;
   width: $font-size-point-section + 6px;
   margin-right: 2px;
-  color: $color;
+  color: $font-color-default;
   @include pc-layout {
-    font-size: $font-size-point-section + 4px;
     height: $font-size-point-section + 10px;
     width: $font-size-point-section + 10px;
   }
@@ -115,10 +117,8 @@ $font-size-point-section: 13px;
 .point__section-header-content {
   display: inline-block;
   padding-bottom: 10px;
-  font-size: $font-size-point-section + 0.5px;
-  @include pc-layout {
-    font-size: $font-size-point-section + 4.5px;
-  }
+  color:  $font-color-header;
+  @include font-size($font-size-point-section + 0.5px);
 }
 
 .point__section-content {
@@ -149,7 +149,20 @@ $font-size-point-section: 13px;
   background-color: $background-color-point-explanation-title;
   padding: 6px 0 6px 0;
   border-radius: 20px 20px 0 0;
-  color: $color;
+  color: $font-color-default;
+  @include font-size($font-size-point-section + 4px);
+}
+
+.point__explanation-no-picture {
+  background-color: $background-color-point-explanation;
+  height: 100%;
+  border-radius: 20px;
+  color: $font-color-default;
+  @include font-size($font-size-point-section + 4px);
+  line-height: $height-point-section;
+  @include pc-layout {
+    line-height: $height-point-section*2;
+  }
 }
 
 .point__explanation-picture {
@@ -168,6 +181,9 @@ $font-size-point-section: 13px;
   flex: 1;
 }
 
+.point__explanation-picture--1-point {
+  @include point-background('/img/points/point_90px.png', 40%);
+}
 .point__explanation-picture--3-points {
   @include point-background('/img/points/point_3.png', 47.5%);
 }
@@ -202,7 +218,6 @@ $font-size-point-section: 13px;
 // point.html
 
 .point {
-  margin-bottom: 50px;
   background-color:	#E8EFF5;
 }
 
