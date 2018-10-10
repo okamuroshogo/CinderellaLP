@@ -1,5 +1,5 @@
 # このサイト全体のタイトル
-site_name: シンデレラ | 王子様からウィンクが届く
+site_name: 1日1回運命の出会いが必ず訪れるシンデレラ系アプリ
 
 # meta description（og:description・twitter:descriptionでも使用）
 description: 王子様からウィンクが届く！シンデレラ系という、新しいジャンルのマッチングサービス
@@ -12,7 +12,9 @@ keywords: []
 url: https://cinderella-castle.com
 
 # Facebook OGP・Twitter cardsで使われる画像 フルURLで指定すること
-# ogp_image_url: http://example.com/ogp.jpg
+ogp_image_url: /img/ogp.png
+ogp_image_width: 1200
+ogp_image_height: 630
 
 # Facebookアプリのapp id（入れないとWarningが出る）
 # facebook_app_id: 99999999999
@@ -21,7 +23,7 @@ url: https://cinderella-castle.com
 # twitter_card_owner: '@TwitterJP'
 
 # favicon
-# favicon_url: /favicon.ico
+favicon_url: /img/favicon.png
 
 # サイトをホーム画面に追加した際のアイコン画像
 # webclipicon_url: http://example.com/webclipicon.png
