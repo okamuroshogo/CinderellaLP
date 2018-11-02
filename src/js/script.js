@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
 })
 
 let els = document.getElementsByClassName("animate");
-var animatedElCount = 0;
+let animatedElCount = 0;
 
 const addAnimation = els => {
     for (let i = 0; i < els.length; i++) {
