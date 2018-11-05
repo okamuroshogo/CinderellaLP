@@ -1,25 +1,44 @@
 .header {
-  position: relative;
-  background: url('/img/logo.png') no-repeat center center;
-  @include pc-layout {
-    height: $height-header;
-    background-size: 25vh;
-  }
-  @include sp-layout {
-    height: $height-header*0.5;
-    background-size: 20vh;
-  }
+    position: relative;
+    background: url('/img/logo.png') no-repeat center center;
+    @include pc-layout {
+        height: $height-header;
+        background-size: 25vh;
+    }
+    @include sp-layout {
+        height: $height-header*0.5;
+        background-size: 20vh;
+    }
 }
 
 .hero {
-  @include pc-layout {
-    height: 40vw;
-    background: url('/img/hero_pc.png') no-repeat center center;
-    background-size: cover;
-  }
-  @include sp-layout {
-    height: 60vw;
-    background: url('/img/hero_sp.png') no-repeat center center;
-    background-size: cover;
-  }
+    position: relative;
+    @include pc-layout {
+        height: 40vw;
+        background: url('/img/hero_pc.png') no-repeat center center;
+        background-size: cover;
+    }
+    @include sp-layout {
+        height: 60vw;
+        background: url('/img/hero_sp.png') no-repeat center center;
+        background-size: cover;
+    }
+}
+
+.logo {
+    position: absolute;
+    @include pc-layout {
+        width: 32%;
+        top: 46%;
+        left: 17%;
+    }
+    @include sp-layout {
+        width: 57%;
+        top: 48%;
+        left: 22%;
+    }
+
+    & > svg {
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3))
+    }
 }
