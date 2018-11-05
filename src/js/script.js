@@ -2,15 +2,30 @@ import {BASE_DIR} from '../constants.yml'
 import _ from 'lodash';
 
 import lottie from "lottie-web";
+import {TweenMax, Power2} from "gsap";
 
 const hero = document.querySelector(".js-hero");
+
 window.addEventListener('load', () => {
-    lottie.loadAnimation({
+
+    TweenMax.set(hero, {
+        opacity: 0
+    });
+
+    const animation = lottie.loadAnimation({
         container: hero, // the dom element that will contain the animation
         renderer: 'svg',
         loop: false,
-        autoplay: true,
-        path: '/data/data.json' // the path to the animation json
+        autoplay: false,
+        path: '/data/data.json', // the path to the animation json
+    });
+
+    TweenMax.to(hero, 2, {
+        opacity: 1,
+        ease: Power2.easeOut,
+        oncomplete: () => {
+            animation.play();
+        }
     });
 })
 
