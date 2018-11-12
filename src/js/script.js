@@ -34,7 +34,10 @@ let animatedElCount = 0;
 
 const addAnimation = els => {
     for (let i = 0; i < els.length; i++) {
-        if (els[i].offsetTop < window.pageYOffset + window.innerHeight + 750 && !els[i].className.includes("animated")) {
+        const scrollPosY = els[i].getBoundingClientRect().top + window.pageYOffset;
+        const divisionValue = 4;
+        const windowPosY = window.pageYOffset + window.innerHeight - window.innerHeight / divisionValue;
+        if ( scrollPosY < windowPosY && !els[i].className.includes("animated")) {
             els[i].className += " animated fadeInUp slower";
             els[i].style.visibility = "visible";
             animatedElCount++;
