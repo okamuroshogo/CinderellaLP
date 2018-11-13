@@ -44,6 +44,69 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+@-webkit-keyframes slideLeft {
+  0% {
+    width: 0;
+    opacity: 0; }
+  100% {
+    width: 883px;
+    opacity: 1; } }
+@keyframes slideLeft {
+  0% {
+    width: 0;
+    opacity: 0; }
+  100% {
+    width: 883px;
+    opacity: 1; } }
+
+@-webkit-keyframes slideLeftSp {
+  0% {
+    width: 0;
+    opacity: 0; }
+  100% {
+    width: 294.33333px;
+    opacity: 1; } }
+
+@keyframes slideLeftSp {
+  0% {
+    width: 0;
+    opacity: 0; }
+  100% {
+    width: 294.33333px;
+    opacity: 1; } }
+
+@-webkit-keyframes slideRight {
+  0% {
+    width: 0;
+    opacity: 0; }
+  100% {
+    width: 960px;
+    opacity: 1; } }
+
+@keyframes slideRight {
+  0% {
+    width: 0;
+    opacity: 0; }
+  100% {
+    width: 960px;
+    opacity: 1; } }
+
+@-webkit-keyframes slideRightSp {
+  0% {
+    width: 0;
+    opacity: 0; }
+  100% {
+    width: 320px;
+    opacity: 1; } }
+
+@keyframes slideRightSp {
+  0% {
+    width: 0;
+    opacity: 0; }
+  100% {
+    width: 320px;
+    opacity: 1; } }
+
 body {
   -webkit-text-size-adjust: 100%;
           text-size-adjust: 100%; }
@@ -52,6 +115,37 @@ body {
   visibility: hidden;
   -moz-animation-duration: 1.5s;
   -webkit-animation-duration: 1.5s; }
+
+.decoration {
+  position: absolute; }
+  .decoration > img {
+    display: block;
+    width: 80%;
+    max-width: 1200px; }
+
+.decoration--left {
+  left: 0;
+  background-image: url("/img/dec_1.png");
+  background-position: center left; }
+  .decoration--left.animated {
+    -webkit-animation-name: slideLeft;
+            animation-name: slideLeft;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s; }
+
+.decoration--right {
+  right: 0;
+  background-image: url("/img/dec_2.png");
+  background-position: center right; }
+  .decoration--right.animated {
+    -webkit-animation-name: slideRight;
+            animation-name: slideRight;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s; }
 
 .text-content, .text-title {
   line-height: 2;
@@ -82,6 +176,15 @@ a {
 .header {
   position: relative;
   background: url("/img/logo.png") no-repeat center center; }
+
+.hero {
+  position: relative; }
+
+.logo {
+  position: absolute; }
+  .logo > svg {
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3)); }
 
 .introduction {
   position: relative; }
@@ -114,6 +217,7 @@ a {
   padding-bottom: 37.5px; }
 
 .features {
+  position: relative;
   text-align: center; }
 
 .features__container {
@@ -168,6 +272,7 @@ a {
   width: 50%; }
 
 .share {
+  position: relative;
   text-align: center; }
 
 .share__container {
@@ -447,15 +552,29 @@ a {
   src: url(/font/komorebi-gothic-P.ttf); }
 
 @media (min-width: 800px) {
+    .decoration--left {
+      top: -250px;
+      width: 883px;
+      height: 651px;
+      background-size: 883px, 651px; }
+    .decoration--right {
+      top: -320px;
+      width: 960px;
+      height: 632px;
+      background-size: 960px, 632px; }
     .wrapper {
       min-width: 1200px; }
     .header {
       height: 120px;
       background-size: 25vh; }
-  .hero {
-    height: 40vw;
-    background: url("/img/hero_pc.png") no-repeat center center;
-    background-size: cover; }
+    .hero {
+      height: 40vw;
+      background: url("/img/hero_pc.png") no-repeat center center;
+      background-size: cover; }
+    .logo {
+      width: 32%;
+      top: 46%;
+      left: 17%; }
     .introduction__effect {
       -webkit-transform: scale(0.5);
               transform: scale(0.5); }
@@ -545,13 +664,33 @@ a {
       width: 275px; } }
 
 @media (max-width: 799px) {
+    .decoration--left {
+      top: -130px;
+      width: 294.33333px;
+      height: 217px;
+      background-size: 294.33333px, 217px; }
+      .decoration--left.animated {
+        -webkit-animation-name: slideLeftSp;
+                animation-name: slideLeftSp; }
+    .decoration--right {
+      top: -150px;
+      width: 320px;
+      height: 210.66667px;
+      background-size: 320px, 210.66667px; }
+      .decoration--right.animated {
+        -webkit-animation-name: slideRightSp;
+                animation-name: slideRightSp; }
     .header {
       height: 60px;
       background-size: 20vh; }
-  .hero {
-    height: 60vw;
-    background: url("/img/hero_sp.png") no-repeat center center;
-    background-size: cover; }
+    .hero {
+      height: 60vw;
+      background: url("/img/hero_sp.png") no-repeat center center;
+      background-size: cover; }
+    .logo {
+      width: 57%;
+      top: 48%;
+      left: 22%; }
     .introduction__effect {
       width: 300px; }
     .introduction__container {
