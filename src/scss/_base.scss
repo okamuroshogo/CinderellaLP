@@ -4,7 +4,80 @@ body {
 }
 
 .animate {
-  visibility: hidden;
-  -moz-animation-duration: 1.5s;
-  -webkit-animation-duration: 1.5s;
+    visibility: hidden;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+}
+
+.decoration {
+    position: absolute;
+    & > img {
+        display: block;
+        width: 80%;
+        max-width: 1200px;
+    }
+}
+
+.decoration--left {
+    left: 0;
+    background-image: url("/img/dec_1.png");
+    background-position: center left;
+    &.animated {
+        animation-name: slideLeft;
+        animation-timing-function: ease-in;
+        animation-duration: 0.5s;
+    }
+
+    @include pc-layout {
+        $w: 883px;
+        $h: 651px;
+        top: -250px;
+        width: $w;
+        height: $h;
+        background-size: $w, $h;
+    }
+
+    @include sp-layout {
+        $w: 883px / 3;
+        $h: 651px / 3;
+        top: -130px;
+        width: $w;
+        height: $h;
+        background-size: $w, $h;
+        &.animated {
+            animation-name: slideLeftSp;
+        }
+    }
+}
+
+.decoration--right {
+    right: 0;
+    background-image: url("/img/dec_2.png");
+    background-position: center right;
+    &.animated {
+        animation-name: slideRight;
+        animation-timing-function: ease-in;
+        animation-duration: 0.5s;
+    }
+
+    @include pc-layout {
+        $w: 960px;
+        $h: 632px;
+        top: -320px;
+        width: $w;
+        height: $h;
+        background-size: $w, $h;
+    }
+
+    @include sp-layout {
+        $w: 960px / 3;
+        $h: 632px / 3;
+        top: -150px;
+        width: $w;
+        height: $h;
+        background-size: $w, $h;
+        &.animated {
+            animation-name: slideRightSp;
+        }
+    }
 }

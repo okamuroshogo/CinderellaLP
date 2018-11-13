@@ -1,4 +1,5 @@
 .share {
+  position: relative;
   text-align: center;
   @include pc-layout {
     padding: 0 $padding-container $padding-vertical-per-section $padding-container;
