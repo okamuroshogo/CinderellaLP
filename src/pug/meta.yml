@@ -12,15 +12,15 @@ keywords: []
 url: https://cinderella-castle.com
 
 # Facebook OGP・Twitter cardsで使われる画像 フルURLで指定すること
-ogp_image_url: /img/ogp.jpg
+ogp_image_url: https://cinderella-castle.com/img/ogp.jpg
 ogp_image_width: 1200
 ogp_image_height: 630
 
 # Facebookアプリのapp id（入れないとWarningが出る）
-# facebook_app_id: 99999999999
+facebook_app_id: 203203193595801
 
 # Twitter cardsの管理者として登録するアカウント（※任意）
-# twitter_card_owner: '@TwitterJP'
+twitter_card_owner: '@CndrllApp'
 
 # favicon
 favicon_url: /img/favicon.png
