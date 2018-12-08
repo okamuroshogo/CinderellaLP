@@ -569,7 +569,7 @@ a {
       background-size: 25vh; }
     .hero {
       height: 40vw;
-      background: url("/img/hero_pc.png") no-repeat center center;
+      background: url("/img/hero_pc.jpg") no-repeat center center;
       background-size: cover; }
     .logo {
       width: 32%;
@@ -685,7 +685,7 @@ a {
       background-size: 20vh; }
     .hero {
       height: 60vw;
-      background: url("/img/hero_sp.png") no-repeat center center;
+      background: url("/img/hero_sp.jpg") no-repeat center center;
       background-size: cover; }
     .logo {
       width: 57%;
